@@ -1,6 +1,9 @@
 # logistics-shipment-sql-analysis
 SQL analysis on logistics shipment data to explore delivery delays, carrier efficiency, and cost optimization.
 
+The goal was to identify what factors influence delivery delays and how to optimize carrier selection based on cost and transit time.
+
+Using SQL, I performed data cleaning, descriptive analytics, and performance analysis, examining metrics such as delivery times, cost per distance, carrier reliability, and delay rates by region.
 
 -- Data Cleaning
 
@@ -87,3 +90,8 @@ SELECT
 ROUND(AVG(cost/ NULLIF(Distance_miles, 0)), 2) AS avg_cost_per_mi
 FROM logistics_shipments_dataset
 GROUP BY carrier;
+
+
+
+
+[Logistics Project.sql](https://github.com/user-attachments/files/23007745/Logistics.Project.sql)
